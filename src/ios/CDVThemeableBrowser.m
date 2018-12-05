@@ -1093,7 +1093,8 @@ BOOL isExiting = FALSE;
         [self.toolbar addSubview:self.titleLabel];
     }
 
-    self.view.backgroundColor = [CDVThemeableBrowserViewController colorFromRGBA:[self getStringFromDict:_browserOptions.statusbar withKey:kThemeableBrowserPropColor withDefault:@"#ffffffff"]];
+//    self.view.backgroundColor = [CDVThemeableBrowserViewController colorFromRGBA:[self getStringFromDict:_browserOptions.statusbar withKey:kThemeableBrowserPropColor withDefault:@"#ffffffff"]];
+    self.view.backgroundColor = [UIColor colorWithRed:86/255.0 green:194/255.0 blue:164/255.0 alpha:1];
     [self.view addSubview:self.toolbar];
     // [self.view addSubview:self.addressLabel];
     // [self.view addSubview:self.spinner];
