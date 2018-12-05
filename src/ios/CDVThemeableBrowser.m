@@ -1748,14 +1748,7 @@ BOOL isExiting = FALSE;
     }
 }
 
-- (void) viewDidLoad {
-    CGRect statusBarFrame = [self invertFrameIfNeeded:[UIApplication sharedApplication].statusBarFrame];
-    statusBarFrame.size.height = STATUSBAR_HEIGHT;
-    UIToolbar* bgToolbar = [[UIToolbar alloc] initWithFrame:statusBarFrame];
-    bgToolbar.barStyle = UIBarStyleDefault;
-    [bgToolbar setAutoresizingMask:UIViewAutoresizingFlexibleWidth];
-    [self.view addSubview:bgToolbar];
-    
+- (void) viewDidLoad {    
     [super viewDidLoad];
 }
 
